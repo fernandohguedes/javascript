@@ -12,7 +12,7 @@ dobro = (a) => {
 console.log(dobro(4))
 
 // função arrow que tem retorno implicito
-dobro = a => 2 * a 
+dobro = a => 2 * a
 console.log(dobro(7))
 
 
@@ -26,8 +26,21 @@ ola = () => {
 }
 console.log(ola())
 
-ola = () => 'Olá Dona Maria' 
+ola = () => 'Olá Dona Maria'
 console.log(ola())
 
 ola = _ => 'Olá estou estranho sem parâmetros'
 console.log(ola())
+
+
+// funçõẽs arrow parte 2
+function Pessoa() {
+    this.idade = 0
+
+    setInterval(() => {
+        this.idade++
+        console.log(this.idade)
+    }, 1000)
+}
+
+new Pessoa
