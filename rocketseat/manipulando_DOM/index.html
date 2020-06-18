@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando a DOM</title>
+</head>
+
+<body>
+    <div id="app">
+        <button onclick="mostraAlerta()">Me pressione</button>
+    </div>
+
+    <div id="app1">
+        <button onmouseover="mostrarPropaganda()">Passe o Mouse aqui</button>
+    </div>
+
+
+    <script>
+        function mostraAlerta(){
+            alert("Botão Foi clicado")
+            console.log('funcionou o alerta')
+        }
+
+        function mostrarPropaganda(){
+            alert('isso é uma propaganda')
+            console.log('exibiu a propaganda')
+        }
+    </script>
+</body>
+
+</html>
