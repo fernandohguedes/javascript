@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com a Dom</title>
+</head>
+<body>
+    
+    <div id="app">
+        <input type="text" name="nome" id="nome" />
+        <button class="botao">Adicionar</button>
+    </div>
+
+
+    <script>
+        // buscando um elemento dentro da dom através do seu ID
+        var inputElement = document.getElementById('nome')
+        console.log(inputElement)
+
+        // buscando um elemento percorrendo a DOM
+        var querySelector = document.querySelector('body div#app input')
+        console.log(querySelector)
+
+        // buscando um elemento através de um atributo do mesmo
+        var querySelector1 = document.querySelector('input[name=nome]')
+        console.log(querySelector1)
+
+        // passando uma função para um elemento de dentro do javascript
+        var inputElement1 = document.querySelector('input[name=nome]')
+        var btnElement = document.querySelector('button.botao')
+
+        btnElement.onclick = function botaoClicado(){
+            let texto = inputElement1.value;
+            alert(`o texto é ${texto}`)
+            console.log(texto)
+        }
+
+    </script>
+
+
+</body>
+</html>
